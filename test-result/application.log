@@ -1,0 +1,2293 @@
+02 Apr 2015 22:48:47,527 INFO  ~ Starting /opt/workspace/restServer
+02 Apr 2015 22:48:48,154 WARN  ~ You're running Play! in DEV mode
+02 Apr 2015 22:48:48,206 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+02 Apr 2015 22:48:50,937 INFO  ~ Connected to jdbc:postgresql:playdb for default
+02 Apr 2015 22:48:51,931 INFO  ~ Application 'restServer' is now started !
+02 Apr 2015 22:51:10,462 ERROR ~ 
+
+@6lki6ne6c
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, the file was not found
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, the file was not found
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, the file was not found
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, the file was not found
+	at play.test.Fixtures.loadModels(Fixtures.java:193)
+	... 10 more
+02 Apr 2015 22:51:10,742 ERROR ~ 
+
+@6lki6ne6d
+Internal Server Error (500) for request GET /@tests
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, the file was not found
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, the file was not found
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, the file was not found
+	at play.test.Fixtures.loadModels(Fixtures.java:193)
+	... 10 more
+02 Apr 2015 22:54:39,355 ERROR ~ 
+
+@6lki6ne6e
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:54:39,370 ERROR ~ 
+
+@6lki6ne6f
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:16,479 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+02 Apr 2015 22:56:16,479 ERROR ~ ERROR: relation "comment" does not exist
+02 Apr 2015 22:56:16,480 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+02 Apr 2015 22:56:16,480 ERROR ~ ERROR: relation "post" does not exist
+02 Apr 2015 22:56:16,639 ERROR ~ 
+
+@6lki6ne6g
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:16,655 ERROR ~ 
+
+@6lki6ne6h
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:20,952 ERROR ~ 
+
+@6lki6ne6i
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:20,972 ERROR ~ 
+
+@6lki6ne6j
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:22,153 ERROR ~ 
+
+@6lki6ne6k
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:22,174 ERROR ~ 
+
+@6lki6ne6l
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:23,204 ERROR ~ 
+
+@6lki6ne6m
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:23,220 ERROR ~ 
+
+@6lki6ne6n
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:24,825 ERROR ~ 
+
+@6lki6ne6o
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:24,846 ERROR ~ 
+
+@6lki6ne6p
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:26,033 ERROR ~ 
+
+@6lki6ne70
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:56:26,053 ERROR ~ 
+
+@6lki6ne71
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:59:28,916 ERROR ~ 
+
+@6lki6ne72
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 22:59:28,935 ERROR ~ 
+
+@6lki6ne73
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:07,040 ERROR ~ 
+
+@6lki6ne74
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:07,057 ERROR ~ 
+
+@6lki6ne75
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:08,323 ERROR ~ 
+
+@6lki6ne76
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:08,337 ERROR ~ 
+
+@6lki6ne77
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:09,725 ERROR ~ 
+
+@6lki6ne78
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:09,741 ERROR ~ 
+
+@6lki6ne79
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:10,546 ERROR ~ 
+
+@6lki6ne7a
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:10,571 ERROR ~ 
+
+@6lki6ne7b
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:11,023 ERROR ~ 
+
+@6lki6ne7c
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:11,038 ERROR ~ 
+
+@6lki6ne7d
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:11,523 ERROR ~ 
+
+@6lki6ne7e
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:11,537 ERROR ~ 
+
+@6lki6ne7f
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:21,342 ERROR ~ 
+
+@6lki6ne7g
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:21,362 ERROR ~ 
+
+@6lki6ne7h
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'jeff' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:27,398 ERROR ~ 
+
+@6lki6ne7i
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:00:27,413 ERROR ~ 
+
+@6lki6ne7j
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:02:00,919 ERROR ~ 
+
+@6lki6ne7k
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:00,940 ERROR ~ 
+
+@6lki6ne7l
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:06,773 ERROR ~ 
+
+@6lki6ne7m
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:06,788 ERROR ~ 
+
+@6lki6ne7n
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:18,600 ERROR ~ 
+
+@6lki6ne7o
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:02:18,620 ERROR ~ 
+
+@6lki6ne7p
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:02:57,222 ERROR ~ 
+
+@6lki6ne80
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 15)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:57,242 ERROR ~ 
+
+@6lki6ne81
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:58,281 ERROR ~ 
+
+@6lki6ne82
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 15)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:02:58,298 ERROR ~ 
+
+@6lki6ne83
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:03:00,143 ERROR ~ 
+
+@6lki6ne84
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 15)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:03:00,163 ERROR ~ 
+
+@6lki6ne85
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:37:16,166 ERROR ~ 
+
+@6lki6ne86
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 15)
+RuntimeException occured : Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:37:16,187 ERROR ~ 
+
+@6lki6ne87
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:15)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: No previous reference found for object of type author with key bob
+	at play.test.Fixtures.resolveDependencies(Fixtures.java:493)
+	at play.test.Fixtures.loadModels(Fixtures.java:234)
+	... 10 more
+02 Apr 2015 23:37:37,222 ERROR ~ 
+
+@6lki6ne88
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:37:37,239 ERROR ~ 
+
+@6lki6ne89
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:16,798 ERROR ~ 
+
+@6lki6ne8a
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:16,815 ERROR ~ 
+
+@6lki6ne8b
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:34,361 ERROR ~ 
+
+@6lki6ne8c
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:34,378 ERROR ~ 
+
+@6lki6ne8d
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:35,435 ERROR ~ 
+
+@6lki6ne8e
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:40:35,448 ERROR ~ 
+
+@6lki6ne8f
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bobs' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:35,687 ERROR ~ 
+
+@6lki6ne8g
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:35,710 ERROR ~ 
+
+@6lki6ne8h
+Internal Server Error (500) for request GET /rafael
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:50,561 ERROR ~ 
+
+@6lki6ne8i
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:50,583 ERROR ~ 
+
+@6lki6ne8j
+Internal Server Error (500) for request GET /rafael
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:52,263 ERROR ~ 
+
+@6lki6ne8k
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:47:52,284 ERROR ~ 
+
+@6lki6ne8l
+Internal Server Error (500) for request GET /rafael
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:48:01,978 ERROR ~ 
+
+@6lki6ne8m
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:48:01,994 ERROR ~ 
+
+@6lki6ne8n
+Internal Server Error (500) for request GET /rafael
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:48:02,814 ERROR ~ 
+
+@6lki6ne8o
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:208)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:48:02,828 ERROR ~ 
+
+@6lki6ne8p
+Internal Server Error (500) for request GET /rafael
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:156)
+	at play.jobs.Job.call(Job.java:216)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:270)
+	at play.test.Fixtures.loadModels(Fixtures.java:170)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:53)
+	at play.jobs.Job$2.apply(Job.java:196)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.jobs.Job.withinFilter(Job.java:175)
+	at play.jobs.Job.call(Job.java:194)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:221)
+	... 10 more
+02 Apr 2015 23:48:07,852 ERROR ~ 
+
+@6lki6ne90
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where name = ?1: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where name = ?1</strong>: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where name = ?1</strong>: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1374)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:277)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more
+Caused by: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at org.hibernate.internal.AbstractQueryImpl.verifyParameters(AbstractQueryImpl.java:344)
+	at org.hibernate.internal.AbstractQueryImpl.verifyParameters(AbstractQueryImpl.java:328)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:97)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	... 8 more
+02 Apr 2015 23:48:30,541 ERROR ~ 
+
+@6lki6ne91
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where name = ?1: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where name = ?1</strong>: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where name = ?1</strong>: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1374)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:277)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more
+Caused by: org.hibernate.QueryException: Not all named parameters have been set: [1] [from models.User where name = ?1]
+	at org.hibernate.internal.AbstractQueryImpl.verifyParameters(AbstractQueryImpl.java:344)
+	at org.hibernate.internal.AbstractQueryImpl.verifyParameters(AbstractQueryImpl.java:328)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:97)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	... 8 more
+02 Apr 2015 23:48:31,958 ERROR ~ <AST>:1:24: unexpected AST node: byname
+02 Apr 2015 23:48:31,959 ERROR ~ <AST>:1:24: unexpected AST node: byname
+<AST>:1:24: unexpected AST node: byname
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2110)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:796)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:597)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:249)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:250)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	at play.server.PlayHandler$NettyInvocation.execute(PlayHandler.java:267)
+	at play.Invoker$Invocation$1.apply(Invoker.java:291)
+	at play.Invoker$Invocation$1.apply(Invoker.java:289)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.Invoker$Invocation.withinFilter(Invoker.java:272)
+	at play.Invoker$Invocation.run(Invoker.java:289)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:245)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+02 Apr 2015 23:48:31,970 ERROR ~ 
+
+@6lki6ne92
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+IllegalArgumentException occured : org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+
+play.exceptions.JavaExecutionException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1374)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:294)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.internal.ast.ErrorCounter.throwQueryException(ErrorCounter.java:79)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:257)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	... 9 more
+02 Apr 2015 23:48:32,763 ERROR ~ <AST>:1:24: unexpected AST node: byname
+02 Apr 2015 23:48:32,763 ERROR ~ <AST>:1:24: unexpected AST node: byname
+<AST>:1:24: unexpected AST node: byname
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2110)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:796)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:597)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:249)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:250)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	at play.server.PlayHandler$NettyInvocation.execute(PlayHandler.java:267)
+	at play.Invoker$Invocation$1.apply(Invoker.java:291)
+	at play.Invoker$Invocation$1.apply(Invoker.java:289)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.Invoker$Invocation.withinFilter(Invoker.java:272)
+	at play.Invoker$Invocation.run(Invoker.java:289)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:245)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+02 Apr 2015 23:48:32,771 ERROR ~ 
+
+@6lki6ne93
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+IllegalArgumentException occured : org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+
+play.exceptions.JavaExecutionException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1374)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:294)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.internal.ast.ErrorCounter.throwQueryException(ErrorCounter.java:79)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:257)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	... 9 more
+02 Apr 2015 23:48:49,905 ERROR ~ <AST>:1:24: unexpected AST node: byname
+02 Apr 2015 23:48:49,905 ERROR ~ <AST>:1:24: unexpected AST node: byname
+<AST>:1:24: unexpected AST node: byname
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2110)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:796)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:597)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:249)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:250)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	at play.server.PlayHandler$NettyInvocation.execute(PlayHandler.java:267)
+	at play.Invoker$Invocation$1.apply(Invoker.java:291)
+	at play.Invoker$Invocation$1.apply(Invoker.java:289)
+	at play.db.jpa.JPA.withTransaction(JPA.java:234)
+	at play.db.jpa.JPA.withinFilter(JPA.java:195)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
+	at play.Invoker$Invocation.withinFilter(Invoker.java:272)
+	at play.Invoker$Invocation.run(Invoker.java:289)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:245)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+02 Apr 2015 23:48:49,910 ERROR ~ 
+
+@6lki6ne94
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+IllegalArgumentException occured : org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+
+play.exceptions.JavaExecutionException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1374)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:294)
+	at play.db.jpa.JPQL.find(JPQL.java:76)
+	at models.User.find(User.java)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: byname near line 1, column 24 [from models.User where byname]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.internal.ast.ErrorCounter.throwQueryException(ErrorCounter.java:79)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:257)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:138)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:104)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:79)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:168)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:222)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:200)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1703)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:291)
+	... 9 more
+02 Apr 2015 23:48:51,884 WARN  ~ SQL Error: 0, SQLState: 42703
+02 Apr 2015 23:48:51,884 ERROR ~ ERROR: column "name" does not exist
+  Position: 180
+02 Apr 2015 23:48:51,894 ERROR ~ 
+
+@6lki6ne95
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where name = ?1: ERROR: column "name" does not exist   Position: 180
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where name = ?1</strong>: ERROR: column "name" does not exist
+  Position: 180
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where name = ?1</strong>: ERROR: column "name" does not exist
+  Position: 180
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "name" does not exist
+  Position: 180
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:79)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2062)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1859)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1838)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:906)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:348)
+	at org.hibernate.loader.Loader.doList(Loader.java:2550)
+	at org.hibernate.loader.Loader.doList(Loader.java:2536)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2366)
+	at org.hibernate.loader.Loader.list(Loader.java:2361)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:357)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:198)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1194)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more
+02 Apr 2015 23:49:51,404 WARN  ~ SQL Error: 0, SQLState: 42703
+02 Apr 2015 23:49:51,404 ERROR ~ ERROR: column "byemail" does not exist
+  Position: 180
+02 Apr 2015 23:49:51,410 ERROR ~ 
+
+@6lki6ne96
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where byemail = ?1: ERROR: column "byemail" does not exist   Position: 180
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "byemail" does not exist
+  Position: 180
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:79)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2062)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1859)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1838)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:906)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:348)
+	at org.hibernate.loader.Loader.doList(Loader.java:2550)
+	at org.hibernate.loader.Loader.doList(Loader.java:2536)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2366)
+	at org.hibernate.loader.Loader.list(Loader.java:2361)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:357)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:198)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1194)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more
+02 Apr 2015 23:49:52,675 WARN  ~ SQL Error: 0, SQLState: 42703
+02 Apr 2015 23:49:52,675 ERROR ~ ERROR: column "byemail" does not exist
+  Position: 180
+02 Apr 2015 23:49:52,682 ERROR ~ 
+
+@6lki6ne97
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where byemail = ?1: ERROR: column "byemail" does not exist   Position: 180
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "byemail" does not exist
+  Position: 180
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:79)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2062)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1859)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1838)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:906)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:348)
+	at org.hibernate.loader.Loader.doList(Loader.java:2550)
+	at org.hibernate.loader.Loader.doList(Loader.java:2536)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2366)
+	at org.hibernate.loader.Loader.list(Loader.java:2361)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:357)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:198)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1194)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more
+02 Apr 2015 23:49:54,386 WARN  ~ SQL Error: 0, SQLState: 42703
+02 Apr 2015 23:49:54,386 ERROR ~ ERROR: column "byemail" does not exist
+  Position: 180
+02 Apr 2015 23:49:54,393 ERROR ~ 
+
+@6lki6ne98
+Internal Server Error (500) for request GET /rafael
+
+Execution exception (In /app/controllers/Application.java around line 23)
+JPAQueryException occured : Error while executing query from models.User where byemail = ?1: ERROR: column "byemail" does not exist   Position: 180
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where byemail = ?1</strong>: ERROR: column "byemail" does not exist
+  Position: 180
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:372)
+	at controllers.Application.rafael(Application.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
+	... 1 more
+Caused by: org.postgresql.util.PSQLException: ERROR: column "byemail" does not exist
+  Position: 180
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:79)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2062)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1859)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1838)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:906)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:348)
+	at org.hibernate.loader.Loader.doList(Loader.java:2550)
+	at org.hibernate.loader.Loader.doList(Loader.java:2536)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2366)
+	at org.hibernate.loader.Loader.list(Loader.java:2361)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:357)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:198)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1194)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:268)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:366)
+	... 7 more

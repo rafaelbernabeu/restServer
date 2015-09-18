@@ -1,0 +1,78 @@
+#{extends 'templateBootstrap.html' /}
+#{set title:'Rafael' /}
+
+<div class="jumbotron">
+    <div class="container">
+        #{if author == null}
+        <h1>Cadastro</h1>
+        <p>Cadastrando usuário...</p>
+        <p><a class="btn btn-primary btn-lg" href="@{Application.listar}" role="button">Listar &raquo;</a></p>
+        #{/if}
+        #{else}
+        <h1>Editar</h1>
+        <p>Editando usuário...</p>
+        <p><a class="btn btn-primary btn-lg" href="@{Application.listar}" role="button">Listar &raquo;</a></p>
+        #{/else}
+
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                    #{if author == null}
+                        #{form @Application.salvar()}
+                        <tr>
+                            <td>
+                                <input type="text" name="fullname" value="${author.fullname}"/>
+                            </td>
+                            <td>
+                                <input type="text" name="email" value="${author.email}"/>
+                            </td>
+                            <td>
+                                <input type="text" name="password" value="${author.password}"/>
+                            </td>
+
+                            <td style="display: inline-flex;">
+                                <button type="submit" class="btn btn-default">Salvar</button>
+                                <a href="@{Application.listar()}" type="button" class="btn btn-default">Cancelar</a>
+                            </td>
+                        </tr>
+                        #{/form}
+                    #{/if}
+                    #{else}
+                        #{form @Application.salvar(author.id)}
+                            <tr>
+                                <td>
+                                    <input type="text" name="fullname" value="${author.fullname}"/>
+                                </td>
+                                <td>
+                                    <input type="text" name="email" value="${author.email}"/>
+                                </td>
+                                <td>
+                                    <input type="text" name="password" value="${author.password}"/>
+                                </td>
+
+                                <td style="display: inline-flex;">
+                                    <button type="submit" class="btn btn-default">Salvar</button>
+                                    <a href="@{Application.listar()}" type="button" class="btn btn-default">Cancelar</a>
+                                </td>
+                            </tr>
+                        #{/form}
+                    #{/else}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

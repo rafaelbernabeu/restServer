@@ -1,0 +1,52 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+GET     /captcha                                Application.captcha
+GET     /show/{id}                              Application.show
+POST    /postComment/{postId}                   Application.postComment
+
+GET     /listar                                 Application.listar
+GET     /cadastro/{authorId}                    Application.cadastro
+GET     /cadastro/?                             Application.cadastro
+POST    /excluir/?                              Application.excluir
+POST    /salvar/?                               Application.salvar
+
+GET     /rest/?                                 Rest.listar
+GET     /rest/salvar                            Rest.salvar
+GET     /rest/excluir                           Rest.excluir
+GET     /rest/listar                            Rest.listar
+
+GET     /syrena                                 Application.syrena
+GET     /messages                               Application.messages
+GET     /assets                                 staticDir:/app/views/Syrena/assets
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+#*       /{controller}/{action}                 {controller}.{action}
+
+# Import CRUD routes (Administration)
+GET     /admin/?                                Admin.index
+*       /admin                                  module:crud
+
+# Import Secure routes
+*       /secure                                 module:secure
+
+#{crud.types}
+GET			/?											${type.controllerClass.name.substring(12).replace('$','')}.index
+GET			/${type.controllerName}						${type.controllerClass.name.substring(12).replace('$','')}.list
+GET			/${type.controllerName}/new					${type.controllerClass.name.substring(12).replace('$','')}.blank
+GET			/${type.controllerName}/{id}				${type.controllerClass.name.substring(12).replace('$','')}.show
+GET			/${type.controllerName}/{id}/{field}		${type.controllerClass.name.substring(12).replace('$','')}.attachment
+GET			/${type.controllerName}/{id}/edit			${type.controllerClass.name.substring(12).replace('$','')}.edit
+POST		/${type.controllerName}						${type.controllerClass.name.substring(12).replace('$','')}.create
+POST		/${type.controllerName}/{id}				${type.controllerClass.name.substring(12).replace('$','')}.save
+DELETE		/${type.controllerName}/{id}				${type.controllerClass.name.substring(12).replace('$','')}.delete
+#{/crud.types}

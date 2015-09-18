@@ -1,0 +1,46 @@
+#{extends 'templateBootstrap.html' /}
+#{set title:'Edit' /}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Listar</h1>
+        <p>Listagem de usuários.</p>
+        <p> <a class="btn btn-primary btn-lg" href="@{Application.cadastro()}" role="button">Inserir Novo &raquo;</a></p>
+    </div>
+</div>
+
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Fullname</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                #{list items:authors, as:'author'}
+                    <tr>
+                        <td>${author.fullname}</td>
+                        <td>${author.email}</td>
+                        <td>${author.password}</td>
+  d                      <td>
+                            #{form @Application.excluir(author.id)}
+                                <a href="@{Application.cadastro(author.id)}" class="btn btn-default" >Editar</a>
+                                <button type="submit" class="btn btn-default">Excluir</button>
+                            #{/form}
+                        </td>
+                    </tr>
+                #{/list}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
